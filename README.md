@@ -8,7 +8,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/Mihenk?logo=nuget&label=Mihenk&color=004880)](https://www.nuget.org/packages/Mihenk)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Mihenk?logo=nuget&label=indirme&color=004880)](https://www.nuget.org/packages/Mihenk)
-[![Version](https://img.shields.io/badge/sürüm-1.0.0-2ea44f)](https://github.com/gokhanaravi/Mihenk/releases)
+[![Version](https://img.shields.io/badge/sürüm-1.0.1-2ea44f)](https://github.com/gokhanaravi/Mihenk/releases)
 [![.NET](https://img.shields.io/badge/.NET-7%20%7C%208%20%7C%209%20%7C%2010-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-latest-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
 [![Dependencies](https://img.shields.io/badge/bağımlılık-0-brightgreen)](#-paketler)
@@ -58,7 +58,7 @@
 
 | Bileşen | Sürüm |
 |---|---|
-| Kütüphane sürümü | `1.0.0` |
+| Kütüphane sürümü | `1.0.1` |
 | Hedef çatılar (TFM) | `net7.0` · `net8.0` · `net9.0` · `net10.0` |
 | C# dil sürümü | `latest` |
 | Nullable reference types | ✅ Etkin |
