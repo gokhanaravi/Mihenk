@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🪨 Mihenk
+<img src="https://raw.githubusercontent.com/gokhanaravi/Mihenk/master/icon.png" width="96" height="96" alt="Mihenk Logo" />
+
+# Mihenk
 
 **Türkiye'ye özgü verileri doğrulamak, dönüştürmek ve maskelemek için sıfır bağımlılıklı .NET kütüphanesi.**
 
