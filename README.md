@@ -453,8 +453,8 @@ Link.Extract("Detaylar https://mihenk.dev ve www.github.com/mihenk adresinde.");
 Hashtag.Extract("Bugün #dotnet ve #Türkçe ile çalıştık #csharp");
 // ["#dotnet", "#Türkçe", "#csharp"]
 
-Mention.Extract("@ahmet ve @mehmet toplantıya katıldı. mail@test.com");
-// ["@ahmet", "@mehmet"]
+Mention.Extract("@ahmet ve @ayşe_yılmaz toplantıya katıldı. mail@test.com");
+// ["@ahmet", "@ayşe_yılmaz"]
 ```
 
 > [!NOTE]
@@ -510,7 +510,9 @@ TurkceEk.ToDative("saat");                          // "saat'e"   (saat'a değil
 TurkceEk.ToDative("harf");                          // "harf'e"
 TurkceEk.ToDative("TBMM");                          // "TBMM'ye"  (kısaltma okunuşu: te-be-me-me)
 TurkceEk.ToLocative("PTT");                         // "PTT'de"
+TurkceEk.ToPlural("TBMM");                          // "TBMM'ler"
 TurkceEk.ToDative("5");                             // "5'e"      (beş)
+TurkceEk.ToPlural("1990");                          // "1990'lar"
 TurkceEk.ToGenitive("2026");                        // "2026'nın" (iki bin yirmi altı)
 
 // Cins isimler için kesme işaretsiz (ünsüz yumuşaması uygulanır)
@@ -994,7 +996,7 @@ iban.TryFormatIban(out var formattedIban);          // true
 ```csharp
 "Bak: https://mihenk.dev".ExtractLinks();           // ["https://mihenk.dev"]
 "#dotnet ve #csharp".ExtractHashtags();             // ["#dotnet", "#csharp"]
-"@ahmet ve @mehmet".ExtractMentions();              // ["@ahmet", "@mehmet"]
+"@ahmet ve @ayşe_yılmaz".ExtractMentions();         // ["@ahmet", "@ayşe_yılmaz"]
 
 "Çağrı Şüheda'nın İlk Ödevi".ToSlug();              // "cagri-suheda-nin-ilk-odevi"
 "istanbul ılık".ToUpperTr();                        // "İSTANBUL ILIK"

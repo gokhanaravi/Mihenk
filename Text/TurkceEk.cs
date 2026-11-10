@@ -171,7 +171,7 @@ public static class TurkceEk
     }
 
     /// <summary>
-    /// TR: Kelimeye çoğul eki (<c>-ler, -lar</c>) ekler (Örn: <c>"Kitap"</c> → <c>"Kitaplar"</c>, <c>"saat"</c> → <c>"saatler"</c>, <c>"harf"</c> → <c>"harfler"</c>).
+    /// TR: Kelimeye çoğul eki (<c>-ler, -lar</c>) ekler (Örn: <c>"Kitap"</c> → <c>"Kitaplar"</c>, <c>"saat"</c> → <c>"saatler"</c>, <c>"TBMM"</c> → <c>"TBMM'ler"</c>, <c>"5"</c> → <c>"5'ler"</c>).
     /// <br/>
     /// EN: Appends the Turkish plural suffix (<c>-ler, -lar</c>) to the word.
     /// </summary>
@@ -182,11 +182,11 @@ public static class TurkceEk
             return string.Empty;
 
         string trimmed = word.Trim();
-        if (!TryAnalyzeWord(trimmed, out char lastVowel, out _, out _))
+        if (!TryAnalyzeWord(trimmed, out char lastVowel, out _, out _, out bool isNumberOrAcronym))
             return trimmed;
 
         string suffix = IsFrontVowel(lastVowel) ? "ler" : "lar";
-        return FormatSuffix(trimmed, suffix, useApostrophe: false, applySoftening: false);
+        return FormatSuffix(trimmed, suffix, useApostrophe: isNumberOrAcronym, applySoftening: false);
     }
 
     private static string FormatSuffix(string word, string suffix, bool useApostrophe, bool applySoftening)
@@ -226,10 +226,19 @@ public static class TurkceEk
         out char lastVowel,
         out bool endsWithVowel,
         out bool endsWithHardConsonant)
+        => TryAnalyzeWord(rawInput, out lastVowel, out endsWithVowel, out endsWithHardConsonant, out _);
+
+    private static bool TryAnalyzeWord(
+        string rawInput,
+        out char lastVowel,
+        out bool endsWithVowel,
+        out bool endsWithHardConsonant,
+        out bool isNumberOrAcronym)
     {
         lastVowel = 'a';
         endsWithVowel = false;
         endsWithHardConsonant = false;
+        isNumberOrAcronym = false;
 
         ReadOnlySpan<char> span = rawInput.AsSpan();
 
@@ -248,6 +257,7 @@ public static class TurkceEk
 
         if (char.IsDigit(span[lastIdx]))
         {
+            isNumberOrAcronym = true;
             return TryAnalyzeTrailingNumber(span[..(lastIdx + 1)], out lastVowel, out endsWithVowel, out endsWithHardConsonant);
         }
 
@@ -259,6 +269,7 @@ public static class TurkceEk
 
         if (IsAbbreviationReadByLetter(lastWord))
         {
+            isNumberOrAcronym = true;
             char lastLetter = ToUpperTrChar(lastWord[^1]);
             GetTurkishLetterPronunciation(lastLetter, out lastVowel, out endsWithVowel, out endsWithHardConsonant);
             return true;

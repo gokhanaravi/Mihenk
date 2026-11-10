@@ -60,6 +60,6 @@ public static partial class Mention
         return results;
     }
 
-    [GeneratedRegex(@"(?<![\p{L}\p{N}_.])@[a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*(?![a-zA-Z0-9_@])", RegexOptions.CultureInvariant)]
+    [GeneratedRegex(@"(?<![\p{L}\p{N}_.])@[\p{L}\p{N}_]+(?:\.[\p{L}\p{N}_]+)*(?![\p{L}\p{N}_@])", RegexOptions.CultureInvariant)]
     private static partial Regex MentionRegex();
 }
