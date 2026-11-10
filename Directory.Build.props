@@ -8,7 +8,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
 
     <!-- NuGet Package Metadata -->
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Gökhan Aravi</Authors>
     <Company>Gökhan Aravi</Company>
     <Product>Mihenk</Product>
