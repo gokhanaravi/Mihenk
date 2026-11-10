@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Mihenk.csproj" />
+  <Project Path="Mihenk.Date/Mihenk.Date.csproj" />
+  <Project Path="Mihenk.Geography/Mihenk.Geography.csproj" />
+  <Project Path="Mihenk.Validation.FluentValidation/Mihenk.Validation.FluentValidation.csproj" />
+</Solution>

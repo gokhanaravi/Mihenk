@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Mihenk.Validation.FluentValidation - FluentValidation için Türkiye'ye özgü (TCKN, VKN, Plaka, IBAN, Kredi Kartı, Telefon, Barkod, IMEI vb.) doğrulama kuralları.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.*" />
+    <ProjectReference Include="..\Mihenk.csproj" />
+  </ItemGroup>
+
+</Project>
+

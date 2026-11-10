@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Mihenk.Date - Diyanet takvimine dayalı Türkiye ulusal/dini resmi tatil günleri ve iş günü (çalışma günü) hesaplama paketi.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mihenk.csproj" />
+  </ItemGroup>
+
+</Project>
+

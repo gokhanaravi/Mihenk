@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Mihenk.Geography - Türkiye'nin 81 ili, 973 ilçesi, telefon alan kodları, bölgeleri ve kuş uçuşu mesafe hesaplama paketi.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mihenk.csproj" />
+  </ItemGroup>
+
+</Project>
+

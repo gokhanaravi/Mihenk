@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Türkiye'ye özgü kimlik, vergi, araç plakası, IBAN, kredi kartı, iletişim, Türkçe metin/ek, KVKK maskeleme ve barkod/IMEI doğrulama ve dönüştürme araçları.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mihenk.Date\**" />
+    <Compile Remove="Mihenk.Geography\**" />
+    <Compile Remove="Mihenk.Validation.FluentValidation\**" />
+    <EmbeddedResource Remove="Mihenk.Date\**" />
+    <EmbeddedResource Remove="Mihenk.Geography\**" />
+    <EmbeddedResource Remove="Mihenk.Validation.FluentValidation\**" />
+    <None Remove="Mihenk.Date\**" />
+    <None Remove="Mihenk.Geography\**" />
+    <None Remove="Mihenk.Validation.FluentValidation\**" />
+  </ItemGroup>
+
+</Project>
