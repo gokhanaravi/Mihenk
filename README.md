@@ -6,8 +6,8 @@
 
 *Zero-dependency .NET toolkit for validating, formatting and masking Turkey-specific data.*
 
-[![NuGet](https://img.shields.io/nuget/v/Mihenk.svg?logo=nuget&label=Mihenk&color=004880)](https://www.nuget.org/packages/Mihenk)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/Mihenk.svg?logo=nuget&label=indirme&color=004880)](https://www.nuget.org/packages/Mihenk)
+[![NuGet](https://img.shields.io/nuget/v/Mihenk?logo=nuget&label=Mihenk&color=004880)](https://www.nuget.org/packages/Mihenk)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Mihenk?logo=nuget&label=indirme&color=004880)](https://www.nuget.org/packages/Mihenk)
 [![Version](https://img.shields.io/badge/sürüm-1.0.0-2ea44f)](https://github.com/gokhanaravi/Mihenk/releases)
 [![.NET](https://img.shields.io/badge/.NET-7%20%7C%208%20%7C%209%20%7C%2010-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-latest-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
@@ -49,10 +49,10 @@
 
 | Paket | Sürüm | Açıklama | Bağımlılık |
 |---|---|---|---|
-| **Mihenk** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.svg?label=)](https://www.nuget.org/packages/Mihenk) | Kimlik, vergi, araç, finans, iletişim, metin, KVKK, ticaret, test verisi, DataAnnotations | — |
-| **Mihenk.Date** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Date.svg?label=)](https://www.nuget.org/packages/Mihenk.Date) | Diyanet tablosuna dayalı resmi tatiller (2020–2035) ve iş günü hesaplama | `Mihenk` |
-| **Mihenk.Geography** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Geography.svg?label=)](https://www.nuget.org/packages/Mihenk.Geography) | 81 il, 973 ilçe, alan kodları, bölgeler, kuş uçuşu mesafe | `Mihenk` |
-| **Mihenk.Validation.FluentValidation** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Validation.FluentValidation.svg?label=)](https://www.nuget.org/packages/Mihenk.Validation.FluentValidation) | FluentValidation kural uzantıları | `Mihenk`, `FluentValidation 11.x` |
+| **Mihenk** | [![NuGet](https://img.shields.io/nuget/v/Mihenk?label=)](https://www.nuget.org/packages/Mihenk) | Kimlik, vergi, araç, finans, iletişim, metin, KVKK, ticaret, test verisi, DataAnnotations | — |
+| **Mihenk.Date** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Date?label=)](https://www.nuget.org/packages/Mihenk.Date) | Diyanet tablosuna dayalı resmi tatiller (2020–2035) ve iş günü hesaplama | `Mihenk` |
+| **Mihenk.Geography** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Geography?label=)](https://www.nuget.org/packages/Mihenk.Geography) | 81 il, 973 ilçe, alan kodları, bölgeler, kuş uçuşu mesafe | `Mihenk` |
+| **Mihenk.Validation.FluentValidation** | [![NuGet](https://img.shields.io/nuget/v/Mihenk.Validation.FluentValidation?label=)](https://www.nuget.org/packages/Mihenk.Validation.FluentValidation) | FluentValidation kural uzantıları | `Mihenk`, `FluentValidation 11.x` |
 
 ### Uyumluluk
 
